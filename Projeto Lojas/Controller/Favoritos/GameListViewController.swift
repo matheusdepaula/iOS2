@@ -8,38 +8,51 @@
 
 import UIKit
 
-class GameListViewController: UIViewController {
-
-    @IBOutlet weak var firstItem: UIView!
-    @IBOutlet weak var secondItem: UIView!
+class GameListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.addGestures()
     }
     
-    func addGestures() {
-        firstItem.addGestureRecognizer(getTap())
-        secondItem.addGestureRecognizer(getTap())
+    //MARK: TableView Data Source
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
-    func getTap() -> UITapGestureRecognizer {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
-        tap.numberOfTapsRequired = 1
-
-        return tap;
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
     }
     
-    @objc func handleTap() {
-        //Do something
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 1.0
     }
-
-    @IBAction func addItem(_ sender: Any) {
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.row {
+        case 0:
+            return 60
+        default:
+            return 130
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        switch indexPath.row {
+        case 0:
+            return tableView.dequeueReusableCell(withIdentifier: "gamesListCell") ?? UITableViewCell()
+        default:
+            return tableView.dequeueReusableCell(withIdentifier: "storeCell") ?? UITableViewCell()
+        }
+    }
+    
+    //MARK: TableView Delegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "myLists")
         
         self.present(viewController, animated: true, completion: nil);
-
     }
 }

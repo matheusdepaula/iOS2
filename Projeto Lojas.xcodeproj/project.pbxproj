@@ -14,7 +14,9 @@
 		893F01F92194F62400AAFE5E /* StoresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893F01F82194F62400AAFE5E /* StoresTableViewController.swift */; };
 		893F01FC2194F63A00AAFE5E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893F01FA2194F63A00AAFE5E /* ProfileViewController.swift */; };
 		893F01FD2194F63A00AAFE5E /* SignupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893F01FB2194F63A00AAFE5E /* SignupTableViewController.swift */; };
-		EA7C72DE14FDF2629C1956BA /* Pods_Projeto_Lojas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BC6D4E6BEAF025021D6AC /* Pods_Projeto_Lojas.framework */; };
+		893F0221219500DD00AAFE5E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893F0220219500DD00AAFE5E /* Realm.framework */; };
+		893F0223219500DD00AAFE5E /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893F0222219500DD00AAFE5E /* SVProgressHUD.framework */; };
+		F1CD51D9D1EB4D208E52AB54 /* Pods_Projeto_Lojas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A7CC3F150376FA36C3E36F /* Pods_Projeto_Lojas.framework */; };
 		F50B809F2141E1DD006FCEE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B809E2141E1DD006FCEE4 /* AppDelegate.swift */; };
 		F50B80A62141E1DF006FCEE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50B80A52141E1DF006FCEE4 /* Assets.xcassets */; };
 		F50B80A92141E1DF006FCEE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50B80A72141E1DF006FCEE4 /* LaunchScreen.storyboard */; };
@@ -36,9 +38,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		041BC6D4E6BEAF025021D6AC /* Pods_Projeto_Lojas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Projeto_Lojas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CB775928536D8C1755555D /* Pods-Projeto Lojas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projeto Lojas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Projeto Lojas/Pods-Projeto Lojas.release.xcconfig"; sourceTree = "<group>"; };
 		7603CD92110C928BC5E95B3E /* Pods-Projeto Lojas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projeto Lojas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Projeto Lojas/Pods-Projeto Lojas.debug.xcconfig"; sourceTree = "<group>"; };
+		86A7CC3F150376FA36C3E36F /* Pods_Projeto_Lojas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Projeto_Lojas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		893F01F02194F55100AAFE5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		893F01F22194F61B00AAFE5E /* MyListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyListsViewController.swift; sourceTree = "<group>"; };
 		893F01F32194F61B00AAFE5E /* GameListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +48,8 @@
 		893F01F82194F62400AAFE5E /* StoresTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoresTableViewController.swift; sourceTree = "<group>"; };
 		893F01FA2194F63A00AAFE5E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		893F01FB2194F63A00AAFE5E /* SignupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupTableViewController.swift; sourceTree = "<group>"; };
+		893F0220219500DD00AAFE5E /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		893F0222219500DD00AAFE5E /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50B809B2141E1DD006FCEE4 /* Projeto Lojas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Projeto Lojas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50B809E2141E1DD006FCEE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F50B80A52141E1DF006FCEE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,7 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA7C72DE14FDF2629C1956BA /* Pods_Projeto_Lojas.framework in Frameworks */,
+				893F0221219500DD00AAFE5E /* Realm.framework in Frameworks */,
+				893F0223219500DD00AAFE5E /* SVProgressHUD.framework in Frameworks */,
+				F1CD51D9D1EB4D208E52AB54 /* Pods_Projeto_Lojas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +89,9 @@
 		0AB9F80B1C548AC598853F9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				041BC6D4E6BEAF025021D6AC /* Pods_Projeto_Lojas.framework */,
+				893F0220219500DD00AAFE5E /* Realm.framework */,
+				893F0222219500DD00AAFE5E /* SVProgressHUD.framework */,
+				86A7CC3F150376FA36C3E36F /* Pods_Projeto_Lojas.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
