@@ -16,6 +16,7 @@
 		893F01FD2194F63A00AAFE5E /* SignupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893F01FB2194F63A00AAFE5E /* SignupTableViewController.swift */; };
 		893F0221219500DD00AAFE5E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893F0220219500DD00AAFE5E /* Realm.framework */; };
 		893F0223219500DD00AAFE5E /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893F0222219500DD00AAFE5E /* SVProgressHUD.framework */; };
+		898A520121A0E72600B488D6 /* StoreDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898A520021A0E72600B488D6 /* StoreDetailsViewController.swift */; };
 		F1CD51D9D1EB4D208E52AB54 /* Pods_Projeto_Lojas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A7CC3F150376FA36C3E36F /* Pods_Projeto_Lojas.framework */; };
 		F50B809F2141E1DD006FCEE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B809E2141E1DD006FCEE4 /* AppDelegate.swift */; };
 		F50B80A62141E1DF006FCEE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50B80A52141E1DF006FCEE4 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		893F01FB2194F63A00AAFE5E /* SignupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupTableViewController.swift; sourceTree = "<group>"; };
 		893F0220219500DD00AAFE5E /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		893F0222219500DD00AAFE5E /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		898A520021A0E72600B488D6 /* StoreDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailsViewController.swift; sourceTree = "<group>"; };
 		F50B809B2141E1DD006FCEE4 /* Projeto Lojas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Projeto Lojas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50B809E2141E1DD006FCEE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F50B80A52141E1DF006FCEE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 			children = (
 				893F01F82194F62400AAFE5E /* StoresTableViewController.swift */,
 				F5F816AE21545B9C0083FDA2 /* BuscaLojasController.swift */,
+				898A520021A0E72600B488D6 /* StoreDetailsViewController.swift */,
 			);
 			path = Lojas;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				F5B8BFD4215D83B600A2708C /* DetalheLojaViewController.swift in Sources */,
 				F5B8BFD6215D840300A2708C /* ListaFavoritosViewController.swift in Sources */,
 				893F01F62194F61B00AAFE5E /* GameListViewController.swift in Sources */,
+				898A520121A0E72600B488D6 /* StoreDetailsViewController.swift in Sources */,
 				F5463C40214B2328000B4B90 /* LojaTableViewCell.swift in Sources */,
 				F5338D052165AA08001C2512 /* Favorito.swift in Sources */,
 				893F01F92194F62400AAFE5E /* StoresTableViewController.swift in Sources */,
