@@ -10,6 +10,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    let loginController = LoginController()
     @IBOutlet weak var viewLogo: UIView!
     
     override func viewDidLoad() {

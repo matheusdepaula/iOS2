@@ -17,6 +17,14 @@
 		893F0221219500DD00AAFE5E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893F0220219500DD00AAFE5E /* Realm.framework */; };
 		893F0223219500DD00AAFE5E /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893F0222219500DD00AAFE5E /* SVProgressHUD.framework */; };
 		898A520121A0E72600B488D6 /* StoreDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898A520021A0E72600B488D6 /* StoreDetailsViewController.swift */; };
+		B50922E121A2481B00ECE651 /* LojasServidor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50922E021A2481B00ECE651 /* LojasServidor.swift */; };
+		B50922E321A24A5900ECE651 /* BuscaFavoritosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50922E221A24A5900ECE651 /* BuscaFavoritosController.swift */; };
+		B50922E521A24ED200ECE651 /* lojas.realm in Resources */ = {isa = PBXBuildFile; fileRef = B50922E421A24ED200ECE651 /* lojas.realm */; };
+		B50922E721A2572300ECE651 /* CadastraUsuarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50922E621A2572300ECE651 /* CadastraUsuarioController.swift */; };
+		B50922E921A25A2800ECE651 /* PerfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50922E821A25A2800ECE651 /* PerfilController.swift */; };
+		B50922EB21A25E6200ECE651 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50922EA21A25E6200ECE651 /* LoginController.swift */; };
+		B50922ED21A2662100ECE651 /* DetalheLojaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50922EC21A2662100ECE651 /* DetalheLojaController.swift */; };
+		B50922EF21A26A5D00ECE651 /* DetalheFavoritoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50922EE21A26A5D00ECE651 /* DetalheFavoritoController.swift */; };
 		F1CD51D9D1EB4D208E52AB54 /* Pods_Projeto_Lojas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A7CC3F150376FA36C3E36F /* Pods_Projeto_Lojas.framework */; };
 		F50B809F2141E1DD006FCEE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B809E2141E1DD006FCEE4 /* AppDelegate.swift */; };
 		F50B80A62141E1DF006FCEE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50B80A52141E1DF006FCEE4 /* Assets.xcassets */; };
@@ -26,7 +34,6 @@
 		F5338CFF2165A952001C2512 /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5338CFE2165A952001C2512 /* Produto.swift */; };
 		F5338D032165A9E8001C2512 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5338D022165A9E8001C2512 /* Usuario.swift */; };
 		F5338D052165AA08001C2512 /* Favorito.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5338D042165AA08001C2512 /* Favorito.swift */; };
-		F5338D072165BD4D001C2512 /* lojas.realm in Resources */ = {isa = PBXBuildFile; fileRef = F5338D062165BD4D001C2512 /* lojas.realm */; };
 		F5463C40214B2328000B4B90 /* LojaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5463C3F214B2328000B4B90 /* LojaTableViewCell.swift */; };
 		F5463C42214B2567000B4B90 /* BuscaLojasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5463C41214B2567000B4B90 /* BuscaLojasTableViewController.swift */; };
 		F5B8BFD0215D833F00A2708C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8BFCF215D833F00A2708C /* LoginViewController.swift */; };
@@ -52,6 +59,14 @@
 		893F0220219500DD00AAFE5E /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		893F0222219500DD00AAFE5E /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		898A520021A0E72600B488D6 /* StoreDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailsViewController.swift; sourceTree = "<group>"; };
+		B50922E021A2481B00ECE651 /* LojasServidor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojasServidor.swift; sourceTree = "<group>"; };
+		B50922E221A24A5900ECE651 /* BuscaFavoritosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaFavoritosController.swift; sourceTree = "<group>"; };
+		B50922E421A24ED200ECE651 /* lojas.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = lojas.realm; sourceTree = "<group>"; };
+		B50922E621A2572300ECE651 /* CadastraUsuarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastraUsuarioController.swift; sourceTree = "<group>"; };
+		B50922E821A25A2800ECE651 /* PerfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilController.swift; sourceTree = "<group>"; };
+		B50922EA21A25E6200ECE651 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		B50922EC21A2662100ECE651 /* DetalheLojaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetalheLojaController.swift; path = "Projeto Lojas/Controller/Lojas/DetalheLojaController.swift"; sourceTree = SOURCE_ROOT; };
+		B50922EE21A26A5D00ECE651 /* DetalheFavoritoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheFavoritoController.swift; sourceTree = "<group>"; };
 		F50B809B2141E1DD006FCEE4 /* Projeto Lojas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Projeto Lojas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50B809E2141E1DD006FCEE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F50B80A52141E1DF006FCEE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,7 +77,6 @@
 		F5338CFE2165A952001C2512 /* Produto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
 		F5338D022165A9E8001C2512 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		F5338D042165AA08001C2512 /* Favorito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorito.swift; sourceTree = "<group>"; };
-		F5338D062165BD4D001C2512 /* lojas.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = lojas.realm; sourceTree = "<group>"; };
 		F5463C3F214B2328000B4B90 /* LojaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojaTableViewCell.swift; sourceTree = "<group>"; };
 		F5463C41214B2567000B4B90 /* BuscaLojasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaLojasTableViewController.swift; sourceTree = "<group>"; };
 		F5B8BFCF215D833F00A2708C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -135,7 +149,7 @@
 				F5B8BFC7215D7FC800A2708C /* Controller */,
 				F5B8BFC8215D7FD000A2708C /* Model */,
 				F50B80A52141E1DF006FCEE4 /* Assets.xcassets */,
-				F5338D062165BD4D001C2512 /* lojas.realm */,
+				B50922E421A24ED200ECE651 /* lojas.realm */,
 				F50B80AA2141E1DF006FCEE4 /* Info.plist */,
 			);
 			path = "Projeto Lojas";
@@ -198,6 +212,7 @@
 				F5B8BFD9215D9CC200A2708C /* Loja.swift */,
 				F5338CFE2165A952001C2512 /* Produto.swift */,
 				F5338CFA2165A558001C2512 /* Database.swift */,
+				B50922E021A2481B00ECE651 /* LojasServidor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,6 +223,8 @@
 				893F01F42194F61B00AAFE5E /* AddListItemViewController.swift */,
 				893F01F32194F61B00AAFE5E /* GameListViewController.swift */,
 				893F01F22194F61B00AAFE5E /* MyListsViewController.swift */,
+				B50922E221A24A5900ECE651 /* BuscaFavoritosController.swift */,
+				B50922EE21A26A5D00ECE651 /* DetalheFavoritoController.swift */,
 			);
 			path = Favoritos;
 			sourceTree = "<group>";
@@ -215,6 +232,7 @@
 		F5B8BFCA215D811B00A2708C /* Lojas */ = {
 			isa = PBXGroup;
 			children = (
+				B50922EC21A2662100ECE651 /* DetalheLojaController.swift */,
 				893F01F82194F62400AAFE5E /* StoresTableViewController.swift */,
 				F5F816AE21545B9C0083FDA2 /* BuscaLojasController.swift */,
 				898A520021A0E72600B488D6 /* StoreDetailsViewController.swift */,
@@ -227,6 +245,9 @@
 			children = (
 				893F01FA2194F63A00AAFE5E /* ProfileViewController.swift */,
 				893F01FB2194F63A00AAFE5E /* SignupTableViewController.swift */,
+				B50922E621A2572300ECE651 /* CadastraUsuarioController.swift */,
+				B50922E821A25A2800ECE651 /* PerfilController.swift */,
+				B50922EA21A25E6200ECE651 /* LoginController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -293,8 +314,8 @@
 			files = (
 				F50B80A92141E1DF006FCEE4 /* LaunchScreen.storyboard in Resources */,
 				F50B80A62141E1DF006FCEE4 /* Assets.xcassets in Resources */,
-				F5338D072165BD4D001C2512 /* lojas.realm in Resources */,
 				893F01F12194F55100AAFE5E /* Main.storyboard in Resources */,
+				B50922E521A24ED200ECE651 /* lojas.realm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,24 +373,31 @@
 				F5F816AF21545B9C0083FDA2 /* BuscaLojasController.swift in Sources */,
 				893F01FC2194F63A00AAFE5E /* ProfileViewController.swift in Sources */,
 				F5338D032165A9E8001C2512 /* Usuario.swift in Sources */,
+				B50922EB21A25E6200ECE651 /* LoginController.swift in Sources */,
 				893F01F72194F61B00AAFE5E /* AddListItemViewController.swift in Sources */,
 				F5B8BFDA215D9CC200A2708C /* Loja.swift in Sources */,
 				F50B80B12141EF5D006FCEE4 /* CadastroTableViewController.swift in Sources */,
+				B50922E121A2481B00ECE651 /* LojasServidor.swift in Sources */,
 				893F01FD2194F63A00AAFE5E /* SignupTableViewController.swift in Sources */,
 				F50B809F2141E1DD006FCEE4 /* AppDelegate.swift in Sources */,
+				B50922ED21A2662100ECE651 /* DetalheLojaController.swift in Sources */,
 				F5463C42214B2567000B4B90 /* BuscaLojasTableViewController.swift in Sources */,
 				F5338CFB2165A558001C2512 /* Database.swift in Sources */,
 				F5B8BFD2215D836700A2708C /* PerfilViewController.swift in Sources */,
 				F5B8BFD8215D843D00A2708C /* FavoritoDetalheViewController.swift in Sources */,
 				893F01F52194F61B00AAFE5E /* MyListsViewController.swift in Sources */,
 				F5338CFF2165A952001C2512 /* Produto.swift in Sources */,
+				B50922E321A24A5900ECE651 /* BuscaFavoritosController.swift in Sources */,
 				F5B8BFD4215D83B600A2708C /* DetalheLojaViewController.swift in Sources */,
 				F5B8BFD6215D840300A2708C /* ListaFavoritosViewController.swift in Sources */,
+				B50922E721A2572300ECE651 /* CadastraUsuarioController.swift in Sources */,
 				893F01F62194F61B00AAFE5E /* GameListViewController.swift in Sources */,
 				898A520121A0E72600B488D6 /* StoreDetailsViewController.swift in Sources */,
 				F5463C40214B2328000B4B90 /* LojaTableViewCell.swift in Sources */,
 				F5338D052165AA08001C2512 /* Favorito.swift in Sources */,
 				893F01F92194F62400AAFE5E /* StoresTableViewController.swift in Sources */,
+				B50922EF21A26A5D00ECE651 /* DetalheFavoritoController.swift in Sources */,
+				B50922E921A25A2800ECE651 /* PerfilController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,7 +543,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FD2KK8MEY3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Projeto Lojas/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -534,7 +562,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FD2KK8MEY3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Projeto Lojas/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

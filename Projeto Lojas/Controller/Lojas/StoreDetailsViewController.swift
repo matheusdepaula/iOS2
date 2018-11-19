@@ -10,8 +10,12 @@ import UIKit
 
 class StoreDetailsViewController: UITableViewController {
 
+    var detalheLojaController: DetalheLojaController!
+    var nomeDaLoja: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        detalheLojaController = DetalheLojaController(nomeDaLoja: nomeDaLoja)
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -19,6 +23,7 @@ class StoreDetailsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //TODO: Utilizar a detalheLojaController para definir a quantidade de células
         return 5
     }
     
@@ -42,6 +47,8 @@ class StoreDetailsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        //TODO: Utilizar a detalheLojaController para popular as células
         switch indexPath.row {
         case 0:
             

@@ -10,6 +10,8 @@ import UIKit
 
 class SignupTableViewController: UITableViewController {
 
+    let cadastraUsuarioController = CadastraUsuarioController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -62,7 +64,7 @@ class SignupTableViewController: UITableViewController {
     @IBAction func signupAction(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let profileVC = storyboard.instantiateViewController(withIdentifier: "userDetail")
-        
+        //TODO: Utilizar o cadastraUsuarioController passando as informações necessarias para o cadastro do usuario
         self.present(profileVC, animated: true, completion: nil)
     }
 }

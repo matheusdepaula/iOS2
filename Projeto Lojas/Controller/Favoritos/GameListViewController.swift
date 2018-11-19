@@ -10,9 +10,13 @@ import UIKit
 
 class GameListViewController: UITableViewController {
     
+    var detalheFavoritoController: DetalheFavoritoController!
+    var nomeDoFavorito: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //TODO: Usar o nomeDoFavorito da tela anterior para instanciar a DetalheFavoritoController
+        detalheFavoritoController = DetalheFavoritoController(nomeDoFavorito: "foo")
     }
     
     //MARK: TableView Data Source
@@ -21,7 +25,7 @@ class GameListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 3 //TODO: utilizar o detalheFavoritoController para definir a quantidade de itens na tabela
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -38,7 +42,7 @@ class GameListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        //TODO: utilizar o detalheFavoritoController para popular as celulas
         switch indexPath.row {
         case 0:
             return tableView.dequeueReusableCell(withIdentifier: "gamesListCell") ?? UITableViewCell()

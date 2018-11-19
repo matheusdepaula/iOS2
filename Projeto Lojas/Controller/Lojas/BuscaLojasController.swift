@@ -31,7 +31,7 @@ class BuscaLojasController {
     }
 
     func nomeLogoLoja(_ index: Int) -> String {
-        return lojasFiltradas[index].logo
+        return lojasFiltradas[index].iconeGrande
     }
     
     func buscarLojas(comNome searchText: String) {

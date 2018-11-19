@@ -10,9 +10,11 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    let perfilController = PerfilController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //TODO: utilizar as informações contidas no perfilController para popular a tela
     }
     
     @IBAction func didBack(_ sender: Any) {
