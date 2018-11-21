@@ -8,14 +8,20 @@
 
 import UIKit
 
-class StoreDetailsViewController: UITableViewController {
+class StoreDetailViewController: UITableViewController {
 
     var detalheLojaController: DetalheLojaController!
     var nomeDaLoja: String = ""
     
+    @IBOutlet weak var favoriteImageView: UIImageView!
+    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         detalheLojaController = DetalheLojaController(nomeDaLoja: nomeDaLoja)
+        nameLabel.text = nomeDaLoja
+        logoImageView.image = UIImage(named: detalheLojaController.logoDaLoja())
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -23,8 +29,7 @@ class StoreDetailsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //TODO: Utilizar a detalheLojaController para definir a quantidade de células
-        return 5
+        return detalheLojaController.quantidadeDeProdutos()
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -32,37 +37,18 @@ class StoreDetailsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch indexPath.row {
-        case 0:
-            return 190
-            
-        case 1:
-            return 75
-            
-        case 2:
-            return 55
-        default:
-            return 60
-        }
+        return 60.0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        //TODO: Utilizar a detalheLojaController para popular as células
-        switch indexPath.row {
-        case 0:
-            
-            return tableView.dequeueReusableCell(withIdentifier: "storeDetail") ?? UITableViewCell()
-        case 1:
-            
-            return tableView.dequeueReusableCell(withIdentifier: "mapDetail") ?? UITableViewCell()
-
-        case 2:
+        return tableView.dequeueReusableCell(withIdentifier: "ProductTableViewCell") ?? UITableViewCell()
+    }
     
-            return tableView.dequeueReusableCell(withIdentifier: "titleDetail") ?? UITableViewCell()
-            
-        default:
-           return tableView.dequeueReusableCell(withIdentifier: "cellInfoDetail") ?? UITableViewCell()
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if let productCell = cell as? ProductTableViewCell {
+            productCell.productImageView.image = UIImage(named: detalheLojaController.imagemDoProduto(indexPath.row))
+            productCell.titleLabel.text = detalheLojaController.nomeDoProduto(indexPath.row)
+            productCell.descriptionLabel.text = detalheLojaController.descricaoDoProduto(indexPath.row)
         }
     }
     

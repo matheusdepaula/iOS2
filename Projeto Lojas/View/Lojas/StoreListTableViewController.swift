@@ -41,7 +41,15 @@ class StoreListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "storeDetail", sender: nil)
+        self.performSegue(withIdentifier: "storeDetail", sender: controller.nomeDaLoja(indexPath.row))
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier, identifier == "storeDetail" {
+            if let vc = segue.destination as? StoreDetailViewController, let nomeDaLoja = sender as? String {
+                vc.nomeDaLoja = nomeDaLoja
+            }
+        }
     }
 
 }
