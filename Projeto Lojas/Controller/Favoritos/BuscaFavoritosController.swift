@@ -29,4 +29,8 @@ class BuscaFavoritosController {
         return realm?.objects(Favorito.self)[index].nome ?? ""
     }
     
+    func quantidadeDeLojas(_ index: Int) -> Int {
+        return realm?.objects(Favorito.self)[index].lojas.count ?? 0
+    }
+    
 }

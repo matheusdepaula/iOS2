@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyListsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FavoriteListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     let buscaFavoritosController = BuscaFavoritosController()
@@ -34,18 +34,25 @@ class MyListsViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //TODO: Usar o buscaFavoritosController para popular as celulas
-        return tableView.dequeueReusableCell(withIdentifier: "simple_cell")!
+        return tableView.dequeueReusableCell(withIdentifier: "FavoriteInformationTableViewCell")!
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if let favoriteCell = cell as? FavoriteInformationTableViewCell {
+            favoriteCell.nameLabel.text = buscaFavoritosController.nomeDoFavorito(indexPath.row)
+            favoriteCell.storeLabel.text = "\(buscaFavoritosController.quantidadeDeLojas(indexPath.row))"
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "listaVideoGame", sender: nil)
+        self.performSegue(withIdentifier: "listaVideoGame",
+                          sender: buscaFavoritosController.nomeDoFavorito(indexPath.row))
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier, identifier == "listaVideoGame" {
-            if let vc = segue.destination as? GameListViewController {
-                vc.nomeDoFavorito = "Lista Jogos" //TODO: Usar o nome da lista selecionada
+            if let vc = segue.destination as? FavoriteDetailTableViewController, let nomeDoFavorito = sender as? String {
+                vc.nomeDoFavorito = nomeDoFavorito
             }
         }
     }

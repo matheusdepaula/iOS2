@@ -43,4 +43,8 @@ class DetalheFavoritoController {
     func lojaVendeJogos(_ index: Int) -> Bool {
         return favorito?.lojas[index].vendeJogos ?? false
     }
+    
+    func nomeDaLoja(_ index: Int) -> String {
+        return favorito?.lojas[index].nome ?? ""
+    }
 }
