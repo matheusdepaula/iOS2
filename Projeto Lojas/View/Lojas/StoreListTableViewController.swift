@@ -33,7 +33,7 @@ class StoreListTableViewController: UITableViewController {
             storeCell.logoImageView.image = UIImage(named: controller.nomeLogoLoja(indexPath.row))
             storeCell.gamesImageView.image = controller.lojaVendeJogos(indexPath.row) ? UIImage(named: "video-game") : nil
             storeCell.computerImageView.image = controller.lojaVendeComputador(indexPath.row) ? UIImage(named: "pc") : nil
-            
+            storeCell.favoriteImageView.image = controller.lojaFavorita(indexPath.row) ? UIImage(named: "liked") : UIImage(named: "like")
             return storeCell
         }
         

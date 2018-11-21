@@ -35,6 +35,10 @@ class BuscaLojasController {
         return todasAsLojas[index].iconeGrande
     }
     
+    func lojaFavorita(_ index: Int) -> Bool {
+        return todasAsLojas[index].favorita
+    }
+    
     func lojaVendeComputador(_ index: Int) -> Bool {
         return todasAsLojas[index].vendeComputador
     }

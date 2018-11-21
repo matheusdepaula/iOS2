@@ -37,6 +37,10 @@ class DetalheLojaController {
         return loja?.produtos.count ?? 0
     }
     
+    func lojaFavorita() -> Bool {
+        return loja?.favorita ?? false
+    }
+    
     func nomeDoProduto(_ index: Int) -> String {
         return loja?.produtos[index].titulo ?? ""
     }

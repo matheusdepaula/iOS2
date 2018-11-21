@@ -22,6 +22,7 @@ class StoreDetailViewController: UITableViewController {
         detalheLojaController = DetalheLojaController(nomeDaLoja: nomeDaLoja)
         nameLabel.text = nomeDaLoja
         logoImageView.image = UIImage(named: detalheLojaController.logoDaLoja())
+        favoriteImageView.image = detalheLojaController.lojaFavorita() ? UIImage(named: "liked") : UIImage(named: "like")
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
