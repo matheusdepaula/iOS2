@@ -12,7 +12,6 @@ class FavoriteDetailTableViewController: UITableViewController {
     
     var detalheFavoritoController: DetalheFavoritoController!
     var nomeDoFavorito: String!
-    @IBOutlet weak var loucamente: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +45,7 @@ class FavoriteDetailTableViewController: UITableViewController {
         case 0:
             return tableView.dequeueReusableCell(withIdentifier: "FavoriteHeaderTableViewCell") ?? UITableViewCell()
         default:
-            return tableView.dequeueReusableCell(withIdentifier: "FavoriteDetailTableViewCell") ?? UITableViewCell()
+            return tableView.dequeueReusableCell(withIdentifier: "StoreDetailTableViewCell") ?? UITableViewCell()
         }
     }
     
@@ -55,7 +54,7 @@ class FavoriteDetailTableViewController: UITableViewController {
         case 0:
             (cell as? FavoriteHeaderTableViewCell)?.titleLabel.text = nomeDoFavorito
         default:
-            if let detailCell  = cell as? FavoriteDetailTableViewCell {
+            if let detailCell  = cell as? StoreDetailTableViewCell {
                 let storeIndex = indexPath.row - 1
                 detailCell.logoImageView.image = UIImage(named: detalheFavoritoController.logoDaLoja(storeIndex))
                 detailCell.nameLabel.text = detalheFavoritoController.nomeDaLoja(storeIndex)

@@ -11,7 +11,7 @@
 		893F01F52194F61B00AAFE5E /* FavoriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893F01F22194F61B00AAFE5E /* FavoriteListViewController.swift */; };
 		893F01F62194F61B00AAFE5E /* FavoriteDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893F01F32194F61B00AAFE5E /* FavoriteDetailTableViewController.swift */; };
 		893F01F72194F61B00AAFE5E /* AddListItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893F01F42194F61B00AAFE5E /* AddListItemViewController.swift */; };
-		893F01F92194F62400AAFE5E /* StoresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893F01F82194F62400AAFE5E /* StoresTableViewController.swift */; };
+		893F01F92194F62400AAFE5E /* StoreListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893F01F82194F62400AAFE5E /* StoreListTableViewController.swift */; };
 		893F01FC2194F63A00AAFE5E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893F01FA2194F63A00AAFE5E /* ProfileViewController.swift */; };
 		893F01FD2194F63A00AAFE5E /* SignupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893F01FB2194F63A00AAFE5E /* SignupTableViewController.swift */; };
 		893F0221219500DD00AAFE5E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893F0220219500DD00AAFE5E /* Realm.framework */; };
@@ -27,7 +27,7 @@
 		B50922EF21A26A5D00ECE651 /* DetalheFavoritoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50922EE21A26A5D00ECE651 /* DetalheFavoritoController.swift */; };
 		B50922F221A4D39600ECE651 /* FavoriteInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50922F121A4D39600ECE651 /* FavoriteInformationTableViewCell.swift */; };
 		B50922F421A4D7A700ECE651 /* FavoriteHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50922F321A4D7A700ECE651 /* FavoriteHeaderTableViewCell.swift */; };
-		B50922F621A4D7BA00ECE651 /* FavoriteDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50922F521A4D7BA00ECE651 /* FavoriteDetailTableViewCell.swift */; };
+		B50922FB21A4E0F100ECE651 /* StoreDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50922FA21A4E0F100ECE651 /* StoreDetailTableViewCell.swift */; };
 		F1CD51D9D1EB4D208E52AB54 /* Pods_Projeto_Lojas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A7CC3F150376FA36C3E36F /* Pods_Projeto_Lojas.framework */; };
 		F50B809F2141E1DD006FCEE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B809E2141E1DD006FCEE4 /* AppDelegate.swift */; };
 		F50B80A62141E1DF006FCEE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50B80A52141E1DF006FCEE4 /* Assets.xcassets */; };
@@ -37,8 +37,6 @@
 		F5338CFF2165A952001C2512 /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5338CFE2165A952001C2512 /* Produto.swift */; };
 		F5338D032165A9E8001C2512 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5338D022165A9E8001C2512 /* Usuario.swift */; };
 		F5338D052165AA08001C2512 /* Favorito.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5338D042165AA08001C2512 /* Favorito.swift */; };
-		F5463C40214B2328000B4B90 /* LojaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5463C3F214B2328000B4B90 /* LojaTableViewCell.swift */; };
-		F5463C42214B2567000B4B90 /* BuscaLojasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5463C41214B2567000B4B90 /* BuscaLojasTableViewController.swift */; };
 		F5B8BFD0215D833F00A2708C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8BFCF215D833F00A2708C /* LoginViewController.swift */; };
 		F5B8BFD2215D836700A2708C /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8BFD1215D836700A2708C /* PerfilViewController.swift */; };
 		F5B8BFD4215D83B600A2708C /* DetalheLojaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8BFD3215D83B600A2708C /* DetalheLojaViewController.swift */; };
@@ -54,7 +52,7 @@
 		893F01F22194F61B00AAFE5E /* FavoriteListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteListViewController.swift; sourceTree = "<group>"; };
 		893F01F32194F61B00AAFE5E /* FavoriteDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteDetailTableViewController.swift; sourceTree = "<group>"; };
 		893F01F42194F61B00AAFE5E /* AddListItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListItemViewController.swift; sourceTree = "<group>"; };
-		893F01F82194F62400AAFE5E /* StoresTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoresTableViewController.swift; sourceTree = "<group>"; };
+		893F01F82194F62400AAFE5E /* StoreListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreListTableViewController.swift; sourceTree = "<group>"; };
 		893F01FA2194F63A00AAFE5E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		893F01FB2194F63A00AAFE5E /* SignupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupTableViewController.swift; sourceTree = "<group>"; };
 		893F0220219500DD00AAFE5E /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +68,7 @@
 		B50922EE21A26A5D00ECE651 /* DetalheFavoritoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheFavoritoController.swift; sourceTree = "<group>"; };
 		B50922F121A4D39600ECE651 /* FavoriteInformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteInformationTableViewCell.swift; sourceTree = "<group>"; };
 		B50922F321A4D7A700ECE651 /* FavoriteHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteHeaderTableViewCell.swift; sourceTree = "<group>"; };
-		B50922F521A4D7BA00ECE651 /* FavoriteDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailTableViewCell.swift; sourceTree = "<group>"; };
+		B50922FA21A4E0F100ECE651 /* StoreDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDetailTableViewCell.swift; sourceTree = "<group>"; };
 		F50B809B2141E1DD006FCEE4 /* Projeto Lojas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Projeto Lojas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50B809E2141E1DD006FCEE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F50B80A52141E1DF006FCEE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,8 +79,6 @@
 		F5338CFE2165A952001C2512 /* Produto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
 		F5338D022165A9E8001C2512 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		F5338D042165AA08001C2512 /* Favorito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorito.swift; sourceTree = "<group>"; };
-		F5463C3F214B2328000B4B90 /* LojaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojaTableViewCell.swift; sourceTree = "<group>"; };
-		F5463C41214B2567000B4B90 /* BuscaLojasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaLojasTableViewController.swift; sourceTree = "<group>"; };
 		F5B8BFCF215D833F00A2708C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F5B8BFD1215D836700A2708C /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		F5B8BFD3215D83B600A2708C /* DetalheLojaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheLojaViewController.swift; sourceTree = "<group>"; };
@@ -128,7 +124,14 @@
 			children = (
 				B50922F121A4D39600ECE651 /* FavoriteInformationTableViewCell.swift */,
 				B50922F321A4D7A700ECE651 /* FavoriteHeaderTableViewCell.swift */,
-				B50922F521A4D7BA00ECE651 /* FavoriteDetailTableViewCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		B50922F721A4DED200ECE651 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B50922FA21A4E0F100ECE651 /* StoreDetailTableViewCell.swift */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -190,9 +193,9 @@
 		F5B8BFC5215D7FB500A2708C /* Lojas */ = {
 			isa = PBXGroup;
 			children = (
+				B50922F721A4DED200ECE651 /* Custom Cells */,
+				893F01F82194F62400AAFE5E /* StoreListTableViewController.swift */,
 				F5B8BFD3215D83B600A2708C /* DetalheLojaViewController.swift */,
-				F5463C3F214B2328000B4B90 /* LojaTableViewCell.swift */,
-				F5463C41214B2567000B4B90 /* BuscaLojasTableViewController.swift */,
 			);
 			path = Lojas;
 			sourceTree = "<group>";
@@ -244,7 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				B50922EC21A2662100ECE651 /* DetalheLojaController.swift */,
-				893F01F82194F62400AAFE5E /* StoresTableViewController.swift */,
 				F5F816AE21545B9C0083FDA2 /* BuscaLojasController.swift */,
 				898A520021A0E72600B488D6 /* StoreDetailsViewController.swift */,
 			);
@@ -386,7 +388,6 @@
 				893F01FC2194F63A00AAFE5E /* ProfileViewController.swift in Sources */,
 				F5338D032165A9E8001C2512 /* Usuario.swift in Sources */,
 				B50922EB21A25E6200ECE651 /* LoginController.swift in Sources */,
-				B50922F621A4D7BA00ECE651 /* FavoriteDetailTableViewCell.swift in Sources */,
 				893F01F72194F61B00AAFE5E /* AddListItemViewController.swift in Sources */,
 				F5B8BFDA215D9CC200A2708C /* Loja.swift in Sources */,
 				F50B80B12141EF5D006FCEE4 /* CadastroTableViewController.swift in Sources */,
@@ -394,7 +395,6 @@
 				893F01FD2194F63A00AAFE5E /* SignupTableViewController.swift in Sources */,
 				F50B809F2141E1DD006FCEE4 /* AppDelegate.swift in Sources */,
 				B50922ED21A2662100ECE651 /* DetalheLojaController.swift in Sources */,
-				F5463C42214B2567000B4B90 /* BuscaLojasTableViewController.swift in Sources */,
 				F5338CFB2165A558001C2512 /* Database.swift in Sources */,
 				F5B8BFD2215D836700A2708C /* PerfilViewController.swift in Sources */,
 				B50922F221A4D39600ECE651 /* FavoriteInformationTableViewCell.swift in Sources */,
@@ -404,10 +404,10 @@
 				F5B8BFD4215D83B600A2708C /* DetalheLojaViewController.swift in Sources */,
 				B50922E721A2572300ECE651 /* CadastraUsuarioController.swift in Sources */,
 				893F01F62194F61B00AAFE5E /* FavoriteDetailTableViewController.swift in Sources */,
+				B50922FB21A4E0F100ECE651 /* StoreDetailTableViewCell.swift in Sources */,
 				898A520121A0E72600B488D6 /* StoreDetailsViewController.swift in Sources */,
-				F5463C40214B2328000B4B90 /* LojaTableViewCell.swift in Sources */,
 				F5338D052165AA08001C2512 /* Favorito.swift in Sources */,
-				893F01F92194F62400AAFE5E /* StoresTableViewController.swift in Sources */,
+				893F01F92194F62400AAFE5E /* StoreListTableViewController.swift in Sources */,
 				B50922EF21A26A5D00ECE651 /* DetalheFavoritoController.swift in Sources */,
 				B50922E921A25A2800ECE651 /* PerfilController.swift in Sources */,
 			);

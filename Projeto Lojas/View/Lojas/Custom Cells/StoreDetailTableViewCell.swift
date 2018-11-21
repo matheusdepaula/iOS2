@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FavoriteDetailTableViewCell: UITableViewCell {
+class StoreDetailTableViewCell: UITableViewCell {
 
     @IBOutlet weak var computerImageView: UIImageView!
     @IBOutlet weak var favoriteImageView: UIImageView!

@@ -6,39 +6,40 @@
 //  Copyright © 2018 com.iesb. All rights reserved.
 //
 
+import Realm
+import RealmSwift
 
 class BuscaLojasController {
     var todasAsLojas: [Loja] = []
-    var lojasFiltradas: [Loja] = []
+    var realm: Realm?
     
     init() {
-        todasAsLojas = [
-            Loja("Casas Bahia", "header-bahianinho"),
-            Loja("Ricardo Electro", "header-ricardo"),
-            Loja("Juninho System", "logo"),
-            Loja("Americanas", "liked")
-        ]
-        
-        lojasFiltradas = todasAsLojas
+        do {
+            try self.realm = Realm()
+            let lojas = Array(realm!.objects(Loja.self))
+            todasAsLojas.append(contentsOf: lojas)
+        } catch let error {
+            print("Não foi possivel instanciar o Realm. Erro: \(error.localizedDescription))")
+        }
     }
     
     func quantidadeDeLojas() -> Int {
-        return lojasFiltradas.count
+        return todasAsLojas.count
     }
     
     func nomeDaLoja(_ index: Int) -> String {
-        return lojasFiltradas[index].nome
+        return todasAsLojas[index].nome
     }
 
     func nomeLogoLoja(_ index: Int) -> String {
-        return lojasFiltradas[index].iconeGrande
+        return todasAsLojas[index].iconeGrande
     }
     
-    func buscarLojas(comNome searchText: String) {
-        if searchText.isEmpty {
-            lojasFiltradas = todasAsLojas
-        } else {
-            lojasFiltradas = todasAsLojas.filter { $0.nome.lowercased().contains(searchText.lowercased()) }
-        }
+    func lojaVendeComputador(_ index: Int) -> Bool {
+        return todasAsLojas[index].vendeComputador
+    }
+    
+    func lojaVendeJogos(_ index: Int) -> Bool {
+        return todasAsLojas[index].vendeJogos
     }
 }
