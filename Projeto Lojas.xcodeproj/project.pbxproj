@@ -20,6 +20,10 @@
 		894B717521A62194004CF457 /* ImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 894B717421A62194004CF457 /* ImageViewCell.xib */; };
 		894B717721A621DA004CF457 /* CustomImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B717621A621DA004CF457 /* CustomImageTableViewCell.swift */; };
 		898A520121A0E72600B488D6 /* StoreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898A520021A0E72600B488D6 /* StoreDetailViewController.swift */; };
+		89C7DEFF21A9CCDC004D87AC /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7DEFE21A9CCDC004D87AC /* TextTableViewCell.swift */; };
+		89C7DF0121A9CD79004D87AC /* ActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7DF0021A9CD79004D87AC /* ActionTableViewCell.swift */; };
+		89C7DF0321A9DF7D004D87AC /* TextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C7DF0221A9DF7D004D87AC /* TextViewCell.xib */; };
+		89C7DF0521A9DFA6004D87AC /* TextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7DF0421A9DFA6004D87AC /* TextViewCell.swift */; };
 		B50922E121A2481B00ECE651 /* LojasServidor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50922E021A2481B00ECE651 /* LojasServidor.swift */; };
 		B50922E321A24A5900ECE651 /* BuscaFavoritosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50922E221A24A5900ECE651 /* BuscaFavoritosController.swift */; };
 		B50922E521A24ED200ECE651 /* lojas.realm in Resources */ = {isa = PBXBuildFile; fileRef = B50922E421A24ED200ECE651 /* lojas.realm */; };
@@ -62,6 +66,10 @@
 		894B717421A62194004CF457 /* ImageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewCell.xib; sourceTree = "<group>"; };
 		894B717621A621DA004CF457 /* CustomImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageTableViewCell.swift; sourceTree = "<group>"; };
 		898A520021A0E72600B488D6 /* StoreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailViewController.swift; sourceTree = "<group>"; };
+		89C7DEFE21A9CCDC004D87AC /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
+		89C7DF0021A9CD79004D87AC /* ActionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionTableViewCell.swift; sourceTree = "<group>"; };
+		89C7DF0221A9DF7D004D87AC /* TextViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewCell.xib; sourceTree = "<group>"; };
+		89C7DF0421A9DFA6004D87AC /* TextViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewCell.swift; sourceTree = "<group>"; };
 		B50922E021A2481B00ECE651 /* LojasServidor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojasServidor.swift; sourceTree = "<group>"; };
 		B50922E221A24A5900ECE651 /* BuscaFavoritosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaFavoritosController.swift; sourceTree = "<group>"; };
 		B50922E421A24ED200ECE651 /* lojas.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = lojas.realm; sourceTree = "<group>"; };
@@ -126,6 +134,10 @@
 			children = (
 				894B717421A62194004CF457 /* ImageViewCell.xib */,
 				894B717621A621DA004CF457 /* CustomImageTableViewCell.swift */,
+				89C7DEFE21A9CCDC004D87AC /* TextTableViewCell.swift */,
+				89C7DF0021A9CD79004D87AC /* ActionTableViewCell.swift */,
+				89C7DF0221A9DF7D004D87AC /* TextViewCell.xib */,
+				89C7DF0421A9DFA6004D87AC /* TextViewCell.swift */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -341,6 +353,7 @@
 				F50B80A62141E1DF006FCEE4 /* Assets.xcassets in Resources */,
 				893F01F12194F55100AAFE5E /* Main.storyboard in Resources */,
 				B50922E521A24ED200ECE651 /* lojas.realm in Resources */,
+				89C7DF0321A9DF7D004D87AC /* TextViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +430,10 @@
 				B50922E721A2572300ECE651 /* CadastraUsuarioController.swift in Sources */,
 				893F01F62194F61B00AAFE5E /* FavoriteDetailTableViewController.swift in Sources */,
 				B50922FB21A4E0F100ECE651 /* StoreDetailTableViewCell.swift in Sources */,
+				89C7DF0121A9CD79004D87AC /* ActionTableViewCell.swift in Sources */,
 				898A520121A0E72600B488D6 /* StoreDetailViewController.swift in Sources */,
+				89C7DEFF21A9CCDC004D87AC /* TextTableViewCell.swift in Sources */,
+				89C7DF0521A9DFA6004D87AC /* TextViewCell.swift in Sources */,
 				F5338D052165AA08001C2512 /* Favorito.swift in Sources */,
 				893F01F92194F62400AAFE5E /* StoreListTableViewController.swift in Sources */,
 				B50922EF21A26A5D00ECE651 /* DetalheFavoritoController.swift in Sources */,

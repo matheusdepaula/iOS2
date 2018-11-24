@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="textRow" id="f3a-IZ-iyT" customClass="TextViewCell" customModule="Projeto_Lojas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f3a-IZ-iyT" id="Yho-Wx-im1">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="QN7-gl-tET">
+                        <rect key="frame" x="32" y="4.5" width="256" height="35"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="DP0-EW-6N6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUg-DI-ZEV">
+                        <rect key="frame" x="32" y="39.5" width="256" height="2"/>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="kz0-ug-Iub"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="QN7-gl-tET" secondAttribute="trailing" constant="32" id="39V-Yz-MTm"/>
+                    <constraint firstItem="QN7-gl-tET" firstAttribute="leading" secondItem="Yho-Wx-im1" secondAttribute="leading" constant="32" id="Ui0-JS-YZ1"/>
+                    <constraint firstItem="QN7-gl-tET" firstAttribute="centerY" secondItem="Yho-Wx-im1" secondAttribute="centerY" id="hcI-Z2-30F"/>
+                    <constraint firstItem="gUg-DI-ZEV" firstAttribute="top" secondItem="QN7-gl-tET" secondAttribute="bottom" id="scq-Hb-3Sx"/>
+                    <constraint firstItem="gUg-DI-ZEV" firstAttribute="trailing" secondItem="QN7-gl-tET" secondAttribute="trailing" id="vaD-bP-0sK"/>
+                    <constraint firstItem="gUg-DI-ZEV" firstAttribute="leading" secondItem="QN7-gl-tET" secondAttribute="leading" id="wOh-TS-HXC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="800" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="separator" destination="gUg-DI-ZEV" id="tK5-jY-jdI"/>
+                <outlet property="textField" destination="QN7-gl-tET" id="bUa-AV-n2L"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

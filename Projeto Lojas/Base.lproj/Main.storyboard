@@ -143,10 +143,10 @@
             </objects>
             <point key="canvasLocation" x="1009" y="544"/>
         </scene>
-        <!--Cadastro-->
+        <!--signup-->
         <scene sceneID="YBx-dN-li1">
             <objects>
-                <tableViewController title="Cadastro" id="I2K-B6-nFq" customClass="SignupTableViewController" customModule="Projeto_Lojas" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="signup" id="I2K-B6-nFq" customClass="SignupTableViewController" customModule="Projeto_Lojas" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BXP-LA-sil">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -375,7 +375,7 @@
                                 </tableViewCellContentView>
                                 <inset key="separatorInset" minX="800" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="actionRow" rowHeight="40" id="72E-2y-Em8">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="actionRow" rowHeight="40" id="72E-2y-Em8" customClass="ActionTableViewCell" customModule="Projeto_Lojas" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="448" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="72E-2y-Em8" id="OaA-iO-yll">
@@ -1225,7 +1225,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="inputs" rowHeight="125" id="52n-xc-xOJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="inputs" rowHeight="125" id="52n-xc-xOJ" customClass="TextTableViewCell" customModule="Projeto_Lojas" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="168" width="320" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="52n-xc-xOJ" id="EZJ-Md-8Ek">
@@ -1240,7 +1240,7 @@
                                             </constraints>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                            <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                     <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1255,7 +1255,7 @@
                                             </constraints>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                     <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1292,8 +1292,12 @@
                                         <constraint firstItem="Rsv-8d-Iy8" firstAttribute="trailing" secondItem="zXL-Rb-eu7" secondAttribute="trailing" id="yWg-9h-nKP"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="email" destination="DOb-nz-2k6" id="XPg-ep-3W5"/>
+                                    <outlet property="password" destination="zXL-Rb-eu7" id="hPx-Dy-aE0"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="buttonCell" rowHeight="65" id="6hA-7r-68P">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="buttonCell" rowHeight="65" id="6hA-7r-68P" customClass="ActionTableViewCell" customModule="Projeto_Lojas" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="293" width="320" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6hA-7r-68P" id="fLE-LL-Odf">
@@ -1314,6 +1318,9 @@
                                                     <integer key="value" value="15"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="didTouchButton:" destination="6hA-7r-68P" eventType="touchUpInside" id="WeM-6P-Wfc"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -1322,8 +1329,11 @@
                                         <constraint firstAttribute="trailing" secondItem="fSL-Me-tPU" secondAttribute="trailing" constant="36" id="c8o-CU-e0l"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="actionButton" destination="fSL-Me-tPU" id="b4A-rn-i4n"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="65" id="lh7-7D-F6N">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="65" id="lh7-7D-F6N" customClass="ActionTableViewCell" customModule="Projeto_Lojas" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="358" width="320" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lh7-7D-F6N" id="soD-QJ-42E">
@@ -1344,9 +1354,6 @@
                                                     <integer key="value" value="15"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
-                                            <connections>
-                                                <segue destination="I2K-B6-nFq" kind="presentation" id="K2b-8i-btz"/>
-                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -1363,6 +1370,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Perfil" id="oNf-Sh-PsW"/>
+                    <connections>
+                        <segue destination="I2K-B6-nFq" kind="presentation" identifier="signup" id="uJz-yn-fel"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9uC-55-AXT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

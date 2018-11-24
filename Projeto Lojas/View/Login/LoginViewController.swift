@@ -8,8 +8,10 @@
 
 import UIKit
 
-class LoginViewController: UITableViewController {
-
+class LoginViewController: UITableViewController, ActionTableViewCellProtocol {
+    
+    var inputCell: TextTableViewCell?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,16 +51,53 @@ class LoginViewController: UITableViewController {
             return tableView.dequeueReusableCell(withIdentifier: "customImageCell", for: indexPath) as! CustomImageTableViewCell
 
         case 1:
-            return tableView.dequeueReusableCell(withIdentifier: "inputs", for: indexPath)
+            inputCell = tableView.dequeueReusableCell(withIdentifier: "inputs", for: indexPath) as? TextTableViewCell
+            return inputCell!
 
         case 2:
-            return tableView.dequeueReusableCell(withIdentifier: "buttonCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "buttonCell", for: indexPath) as! ActionTableViewCell
+            cell.actionButton.tag = 0
+            
+            cell.delegate = self
+
+            return cell
 
         case 3:
-            return tableView.dequeueReusableCell(withIdentifier: "buttonCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "buttonCell", for: indexPath) as! ActionTableViewCell
+            cell.actionButton.tag = 1
+            cell.actionButton.setTitle("Cadastre-se", for: .normal)
+            cell.actionButton.backgroundColor = .red
+            
+            cell.delegate = self
+            
+            return cell
 
         default:
             return UITableViewCell()
+        }
+    }
+    
+    //MARK: Action cell delegate
+    func didTouchButton(_ button: UIButton) {
+        if button.tag == 0 {
+            if let cell = inputCell {
+                if ((cell.email.text == "") || (cell.password.text == "")) {
+                    
+                    let alert = UIAlertController(title: nil, message: "Para entrar digite seu E-mail e Senha!", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                    
+                } else {
+                    
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let controller = storyboard.instantiateViewController(withIdentifier: "profileScene")
+                    self.present(controller, animated: true, completion: nil)
+                }
+            }
+        } else {
+
+            self.performSegue(withIdentifier: "signup", sender: nil)
+
         }
     }
 }

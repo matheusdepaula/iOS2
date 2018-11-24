@@ -12,8 +12,18 @@ class SignupTableViewController: UITableViewController {
 
     let cadastraUsuarioController = CadastraUsuarioController()
     
+    var name: UITextField?
+    var email: UITextField?
+    var password: UITextField?
+    var phone: UITextField?
+    var age: UITextField?
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.register(UINib(nibName: "TextViewCell", bundle: nil), forCellReuseIdentifier: "textRow")
+
     }
 
     // MARK: - Table view data source
@@ -37,15 +47,43 @@ class SignupTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
-            return tableView.dequeueReusableCell(withIdentifier: "nameRow")!
+            let cell = tableView.dequeueReusableCell(withIdentifier: "textRow", for: indexPath) as! TextViewCell
+            cell.textField.placeholder = "Nome"
+            name = cell.textField
+
+            return cell
         case 1:
-            return tableView.dequeueReusableCell(withIdentifier: "emailRow")!
+            let cell = tableView.dequeueReusableCell(withIdentifier: "textRow", for: indexPath) as! TextViewCell
+            cell.textField.placeholder = "E-mail"
+            cell.textField.keyboardType = UIKeyboardType.emailAddress
+            
+            email = cell.textField
+
+            return cell
         case 2:
-            return tableView.dequeueReusableCell(withIdentifier: "passRow")!
+            let cell = tableView.dequeueReusableCell(withIdentifier: "textRow", for: indexPath) as! TextViewCell
+            cell.textField.placeholder = "Senha"
+            cell.textField.isSecureTextEntry = true
+            
+            password = cell.textField
+
+            return cell
         case 3:
-            return tableView.dequeueReusableCell(withIdentifier: "phoneRow")!
+            let cell = tableView.dequeueReusableCell(withIdentifier: "textRow", for: indexPath) as! TextViewCell
+            cell.textField.placeholder = "Telefone"
+            cell.textField.keyboardType = UIKeyboardType.phonePad
+            
+            phone = cell.textField
+
+            return cell
         case 4:
-            return tableView.dequeueReusableCell(withIdentifier: "ageRow")!
+            let cell = tableView.dequeueReusableCell(withIdentifier: "textRow", for: indexPath) as! TextViewCell
+            cell.textField.placeholder = "Idade"
+            cell.textField.keyboardType = UIKeyboardType.numberPad
+
+            age = cell.textField
+
+            return cell
         case 5:
             return tableView.dequeueReusableCell(withIdentifier: "emptyRow")!
         case 6:
@@ -63,8 +101,18 @@ class SignupTableViewController: UITableViewController {
     
     @IBAction func signupAction(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let profileVC = storyboard.instantiateViewController(withIdentifier: "userDetail")
-        //TODO: Utilizar o cadastraUsuarioController passando as informações necessarias para o cadastro do usuario
-        self.present(profileVC, animated: true, completion: nil)
+        let profileVC = storyboard.instantiateViewController(withIdentifier: "profileScene")
+        
+        let registerStatus = cadastraUsuarioController.cadastrar(nome: name?.text ?? "", email: email?.text ?? "", senha: password?.text ?? "", telefone: phone?.text ?? "", idade: Int(age?.text ?? "0")!)
+        
+        if registerStatus {
+            self.present(profileVC, animated: true, completion: nil)
+        } else {
+            
+            let alert = UIAlertController(title: "Erro", message: "Erro ao cadastar as informações do usuário. Tente novamente mais tarde.", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+
+        }
     }
 }
