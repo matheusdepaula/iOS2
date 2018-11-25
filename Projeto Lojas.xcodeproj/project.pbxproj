@@ -24,6 +24,9 @@
 		89C7DF0121A9CD79004D87AC /* ActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7DF0021A9CD79004D87AC /* ActionTableViewCell.swift */; };
 		89C7DF0321A9DF7D004D87AC /* TextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C7DF0221A9DF7D004D87AC /* TextViewCell.xib */; };
 		89C7DF0521A9DFA6004D87AC /* TextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7DF0421A9DFA6004D87AC /* TextViewCell.swift */; };
+		89C7DF0721AAFF52004D87AC /* ActionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C7DF0621AAFF52004D87AC /* ActionViewCell.xib */; };
+		89C7DF0921AB080E004D87AC /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C7DF0821AB080E004D87AC /* InfoCell.xib */; };
+		89C7DF0B21AB0824004D87AC /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7DF0A21AB0824004D87AC /* InfoCell.swift */; };
 		B50922E121A2481B00ECE651 /* LojasServidor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50922E021A2481B00ECE651 /* LojasServidor.swift */; };
 		B50922E321A24A5900ECE651 /* BuscaFavoritosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50922E221A24A5900ECE651 /* BuscaFavoritosController.swift */; };
 		B50922E521A24ED200ECE651 /* lojas.realm in Resources */ = {isa = PBXBuildFile; fileRef = B50922E421A24ED200ECE651 /* lojas.realm */; };
@@ -70,6 +73,9 @@
 		89C7DF0021A9CD79004D87AC /* ActionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionTableViewCell.swift; sourceTree = "<group>"; };
 		89C7DF0221A9DF7D004D87AC /* TextViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewCell.xib; sourceTree = "<group>"; };
 		89C7DF0421A9DFA6004D87AC /* TextViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewCell.swift; sourceTree = "<group>"; };
+		89C7DF0621AAFF52004D87AC /* ActionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionViewCell.xib; sourceTree = "<group>"; };
+		89C7DF0821AB080E004D87AC /* InfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
+		89C7DF0A21AB0824004D87AC /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
 		B50922E021A2481B00ECE651 /* LojasServidor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojasServidor.swift; sourceTree = "<group>"; };
 		B50922E221A24A5900ECE651 /* BuscaFavoritosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaFavoritosController.swift; sourceTree = "<group>"; };
 		B50922E421A24ED200ECE651 /* lojas.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = lojas.realm; sourceTree = "<group>"; };
@@ -135,9 +141,12 @@
 				894B717421A62194004CF457 /* ImageViewCell.xib */,
 				894B717621A621DA004CF457 /* CustomImageTableViewCell.swift */,
 				89C7DEFE21A9CCDC004D87AC /* TextTableViewCell.swift */,
+				89C7DF0621AAFF52004D87AC /* ActionViewCell.xib */,
 				89C7DF0021A9CD79004D87AC /* ActionTableViewCell.swift */,
 				89C7DF0221A9DF7D004D87AC /* TextViewCell.xib */,
 				89C7DF0421A9DFA6004D87AC /* TextViewCell.swift */,
+				89C7DF0821AB080E004D87AC /* InfoCell.xib */,
+				89C7DF0A21AB0824004D87AC /* InfoCell.swift */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -348,6 +357,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C7DF0721AAFF52004D87AC /* ActionViewCell.xib in Resources */,
+				89C7DF0921AB080E004D87AC /* InfoCell.xib in Resources */,
 				F50B80A92141E1DF006FCEE4 /* LaunchScreen.storyboard in Resources */,
 				894B717521A62194004CF457 /* ImageViewCell.xib in Resources */,
 				F50B80A62141E1DF006FCEE4 /* Assets.xcassets in Resources */,
@@ -428,6 +439,7 @@
 				894B717721A621DA004CF457 /* CustomImageTableViewCell.swift in Sources */,
 				B50922E321A24A5900ECE651 /* BuscaFavoritosController.swift in Sources */,
 				B50922E721A2572300ECE651 /* CadastraUsuarioController.swift in Sources */,
+				89C7DF0B21AB0824004D87AC /* InfoCell.swift in Sources */,
 				893F01F62194F61B00AAFE5E /* FavoriteDetailTableViewController.swift in Sources */,
 				B50922FB21A4E0F100ECE651 /* StoreDetailTableViewCell.swift in Sources */,
 				89C7DF0121A9CD79004D87AC /* ActionTableViewCell.swift in Sources */,

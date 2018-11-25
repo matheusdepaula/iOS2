@@ -9,13 +9,20 @@
 import UIKit
 
 class ProfileViewController: UITableViewController {
-    @IBOutlet var tableViewReference: UITableView!
     
     let perfilController = PerfilController()
+    let loginController = LoginController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //TODO: utilizar as informações contidas no perfilController para popular a tela
+        registerNibFiles()
+    }
+    
+    func registerNibFiles() {
+        tableView.register(UINib(nibName: "InfoCell", bundle: nil), forCellReuseIdentifier: "info")
+        
+        tableView.register(UINib(nibName: "ImageViewCell", bundle: nil), forCellReuseIdentifier: "customImageCell")
+
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -49,10 +56,20 @@ class ProfileViewController: UITableViewController {
         
         switch indexPath.row {
         case 0:
-            return tableView.dequeueReusableCell(withIdentifier: "imageCell") ?? UITableViewCell()
+            let cell = tableView.dequeueReusableCell(withIdentifier: "customImageCell", for: indexPath) as! CustomImageTableViewCell
             
+            cell.customImage.image = UIImage.init(named: perfilController.imagemDoUsuario())
+            
+            return cell
+
         case 1:
-            return tableView.dequeueReusableCell(withIdentifier: "infoCell") ?? UITableViewCell()
+            let cell = tableView.dequeueReusableCell(withIdentifier: "info") as! InfoCell
+            
+            cell.name.text = perfilController.nomeDoUsuario()
+            cell.email.text = perfilController.emailDoUsuario()
+            cell.phone.text = perfilController.telefoneDoUsuario()
+            
+            return cell
         case 2:
             return tableView.dequeueReusableCell(withIdentifier: "otherCell") ?? UITableViewCell()
         case 3:
@@ -63,6 +80,9 @@ class ProfileViewController: UITableViewController {
     }
     
     @IBAction func didBack(_ sender: Any) {
+        
+        loginController.efetuarLogout()
+        
         self.navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
     }

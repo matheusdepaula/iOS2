@@ -32,7 +32,7 @@ class PerfilController {
     }
     
     func imagemDoUsuario() -> String {
-        return usuario?.foto ?? ""
+        return usuario?.foto ?? "user-logo"
     }
     
     func emailDoUsuario() -> String {

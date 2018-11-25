@@ -14,8 +14,13 @@ class LoginViewController: UITableViewController, ActionTableViewCellProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        registerNibFiles()
+    }
+    
+    func registerNibFiles() {
         
         tableView.register(UINib(nibName: "ImageViewCell", bundle: nil), forCellReuseIdentifier: "customImageCell")
+        tableView.register(UINib(nibName: "ActionViewCell", bundle: nil), forCellReuseIdentifier: "buttonCell")
     }
 
     // MARK: - Table view data source
@@ -97,7 +102,6 @@ class LoginViewController: UITableViewController, ActionTableViewCellProtocol {
         } else {
 
             self.performSegue(withIdentifier: "signup", sender: nil)
-
         }
     }
 }

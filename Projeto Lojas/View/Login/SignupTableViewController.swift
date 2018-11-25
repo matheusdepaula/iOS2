@@ -8,22 +8,34 @@
 
 import UIKit
 
-class SignupTableViewController: UITableViewController {
+class SignupTableViewController: UITableViewController, ActionTableViewCellProtocol {
 
     let cadastraUsuarioController = CadastraUsuarioController()
+    var sucessSignup = false
     
     var name: UITextField?
     var email: UITextField?
     var password: UITextField?
     var phone: UITextField?
     var age: UITextField?
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        registerNibFiles()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if sucessSignup {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    func registerNibFiles() {
+        
         tableView.register(UINib(nibName: "TextViewCell", bundle: nil), forCellReuseIdentifier: "textRow")
-
+        tableView.register(UINib(nibName: "ActionViewCell", bundle: nil), forCellReuseIdentifier: "buttonCell")
     }
 
     // MARK: - Table view data source
@@ -87,7 +99,13 @@ class SignupTableViewController: UITableViewController {
         case 5:
             return tableView.dequeueReusableCell(withIdentifier: "emptyRow")!
         case 6:
-            return tableView.dequeueReusableCell(withIdentifier: "actionRow")!
+            let cell = tableView.dequeueReusableCell(withIdentifier: "buttonCell", for: indexPath) as! ActionTableViewCell
+            cell.actionButton.setTitle("Cadastrar", for: .normal)
+            cell.actionButton.backgroundColor = .red
+            
+            cell.delegate = self
+            
+            return cell
         default:
             return tableView.dequeueReusableCell(withIdentifier: "emptyRow")!
         }
@@ -95,24 +113,29 @@ class SignupTableViewController: UITableViewController {
     
     
     @IBAction func closeAction(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func signupAction(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let profileVC = storyboard.instantiateViewController(withIdentifier: "profileScene")
+    //MARK: Action cell delegate
+    func didTouchButton(_ button: UIButton) {
         
-        let registerStatus = cadastraUsuarioController.cadastrar(nome: name?.text ?? "", email: email?.text ?? "", senha: password?.text ?? "", telefone: phone?.text ?? "", idade: Int(age?.text ?? "0")!)
+        let registerStatus = cadastraUsuarioController.cadastrar(nome: name?.text ?? "", email: email?.text ?? "", senha: password?.text ?? "", telefone: phone?.text ?? "", idade: Int(age?.text ?? "0") ?? 0)
         
         if registerStatus {
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let profileVC = storyboard.instantiateViewController(withIdentifier: "profileScene") as! ProfileViewController
+            
+            sucessSignup = true
+            
             self.present(profileVC, animated: true, completion: nil)
+            
         } else {
             
             let alert = UIAlertController(title: "Erro", message: "Erro ao cadastar as informações do usuário. Tente novamente mais tarde.", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
-
+            
         }
     }
 }

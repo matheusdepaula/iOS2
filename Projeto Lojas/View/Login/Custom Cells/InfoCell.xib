@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="info" rowHeight="150" id="4Ch-Gh-q7L" customClass="InfoCell" customModule="Projeto_Lojas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Ch-Gh-q7L" id="DDO-Me-NoZ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paula Silva Sauro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNa-ne-h3s">
+                        <rect key="frame" x="69" y="8" width="182" height="29"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="paula.silva@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHd-KU-jiI">
+                        <rect key="frame" x="77.5" y="65" width="165" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(61) 88888-8888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rf5-Rn-m4H">
+                        <rect key="frame" x="95" y="112.5" width="130" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hHd-KU-jiI" firstAttribute="centerX" secondItem="DDO-Me-NoZ" secondAttribute="centerX" id="BLr-eh-wR3"/>
+                    <constraint firstItem="rf5-Rn-m4H" firstAttribute="centerX" secondItem="hHd-KU-jiI" secondAttribute="centerX" id="Cf2-Q0-Rtd"/>
+                    <constraint firstItem="hHd-KU-jiI" firstAttribute="top" secondItem="jNa-ne-h3s" secondAttribute="bottom" constant="28" id="Otf-60-73f"/>
+                    <constraint firstItem="jNa-ne-h3s" firstAttribute="centerX" secondItem="DDO-Me-NoZ" secondAttribute="centerX" id="UFY-Sv-Gz1"/>
+                    <constraint firstItem="rf5-Rn-m4H" firstAttribute="top" secondItem="hHd-KU-jiI" secondAttribute="bottom" constant="28" id="o5g-Yq-72h"/>
+                    <constraint firstItem="hHd-KU-jiI" firstAttribute="centerY" secondItem="DDO-Me-NoZ" secondAttribute="centerY" id="p04-Vp-cfE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="email" destination="hHd-KU-jiI" id="0OA-0r-vkl"/>
+                <outlet property="name" destination="jNa-ne-h3s" id="ghM-Ri-P5b"/>
+                <outlet property="phone" destination="rf5-Rn-m4H" id="LWU-n2-FTO"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

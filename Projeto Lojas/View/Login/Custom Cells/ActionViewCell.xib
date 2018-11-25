@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="buttonCell" rowHeight="65" id="wyD-Py-rUw" customClass="ActionTableViewCell" customModule="Projeto_Lojas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wyD-Py-rUw" id="c71-fH-73E">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zz7-hY-1yg">
+                        <rect key="frame" x="36" y="12.5" width="248" height="40"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.65868471750000002" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="4F1-IW-aB8"/>
+                        </constraints>
+                        <state key="normal" title="Entrar">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="didTouchButton:" destination="wyD-Py-rUw" eventType="touchUpInside" id="Yp5-iz-xyP"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Zz7-hY-1yg" firstAttribute="centerY" secondItem="c71-fH-73E" secondAttribute="centerY" id="07x-3T-Qf5"/>
+                    <constraint firstItem="Zz7-hY-1yg" firstAttribute="leading" secondItem="c71-fH-73E" secondAttribute="leading" constant="36" id="3iW-Lx-pdI"/>
+                    <constraint firstAttribute="trailing" secondItem="Zz7-hY-1yg" secondAttribute="trailing" constant="36" id="ZJ5-7c-Xts"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="actionButton" destination="Zz7-hY-1yg" id="8zu-je-blh"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
