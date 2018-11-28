@@ -10,6 +10,7 @@ import UIKit
 
 class LoginViewController: UITableViewController, ActionTableViewCellProtocol {
     
+    let loginController = LoginController()
     var inputCell: TextTableViewCell?
     
     override func viewDidLoad() {
@@ -94,9 +95,17 @@ class LoginViewController: UITableViewController, ActionTableViewCellProtocol {
                     
                 } else {
                     
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let controller = storyboard.instantiateViewController(withIdentifier: "profileScene")
-                    self.present(controller, animated: true, completion: nil)
+                    if (loginController.efetuarLogin(email: cell.email.text!, senha: cell.password.text!) ?? false) {
+                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                        let controller = storyboard.instantiateViewController(withIdentifier: "profileScene")
+                        self.present(controller, animated: true, completion: nil)
+                    } else {
+                        
+                        let alert = UIAlertController(title: "Error", message: "Usuário ou senha não reconhecido", preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
+
+                    }
                 }
             }
         } else {
